@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './../../assets/styles/_button.scss'
+import './../../assets/styles/_icon.scss'
 class Button extends Component {
     constructor(props) {
         super(props);
@@ -11,7 +12,7 @@ class Button extends Component {
             size:'',
             icon:'',
             circle:'false',
-            // exist
+            iconClass:''
         }
     }
     componentDidMount() {
@@ -31,21 +32,53 @@ class Button extends Component {
             })
         }
         if(this.props.circle === 'true') {
+            let arr = []
+            arr.push(this.state.className,'circularbtn')
             await this.setState({
-                className:'circularbtn'
+                className:arr.join(' ')
             })
         }
         if(this.props.size === 'big') {
+            let arr = []
+            arr.push(this.state.className,'bigbtn')
             await this.setState({
-                className:'bigbtn'
+                className:arr.join(' ')
+            })
+            
+        }
+        if(this.props.size === 'small') {
+            let arr = []
+            arr.push(this.state.className,'smallbtn')
+            await this.setState({
+                className:arr.join(' ')
+            })
+        }
+        if(this.props.size === 'mini') {
+            let arr = []
+            arr.push(this.state.className,'minibtn')
+            await this.setState({
+                className:arr.join(' ')
+            })
+        }
+        if(this.props.icon === 'add') {
+            let arr = []
+            arr.push('icon','icon-add')
+            await this.setState({
+                iconClass:arr.join(' ')
+            })
+        }
+        if(this.props.icon === 'talk') {
+            let arr = []
+            arr.push('icon','icon-talk')
+            await this.setState({
+                iconClass:arr.join(' ')
             })
         }
     }
     render() {
-
         return (
             <button className={this.state.className}>
-                <i className='icon'></i>
+                <i className={this.state.iconClass}></i>
                 {this.state.text}
             </button>
         );

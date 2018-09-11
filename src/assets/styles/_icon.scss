@@ -1,0 +1,65 @@
+$icon-font-family: 'iconfont';
+
+@font-face {
+    font-family: 'iconfont';  /* project id 824189 */
+    src: url('//at.alicdn.com/t/font_824189_ayg5ik8ukcq.eot');
+    src: url('//at.alicdn.com/t/font_824189_ayg5ik8ukcq.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_824189_ayg5ik8ukcq.woff') format('woff'),
+    url('//at.alicdn.com/t/font_824189_ayg5ik8ukcq.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_824189_ayg5ik8ukcq.svg#iconfont') format('svg');
+  }
+
+.icon {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    cursor: pointer;
+    font-family: $icon-font-family;
+    font-style: normal;
+}
+
+$icon: (
+    more: '\e73e',
+    add:'\e733',
+    talk: '\e6d1',
+    call: '\e72d'  
+);
+
+@each $key, $value in $icon {
+    .icon-#{$key} {
+        &::before {
+            content: $value;
+        }
+    }
+}
+
+.loading {
+    display: inline-block;
+    -webkit-animation: loading-rotate  2s infinite linear;
+    animation: loading-rotate  2s infinite linear;
+
+}
+
+@keyframes loading-rotate {
+
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+@-webkit-keyframes loading-rotate {
+
+    from {
+        -webkit-transform: rotateZ(0deg);
+    }
+
+    to {
+        -webkit-transform: rotateZ(360deg);
+    }
+
+}

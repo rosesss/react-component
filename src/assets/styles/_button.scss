@@ -1,8 +1,5 @@
 
 .primarybtn {
-    width: 76px;
-    height: 30px;
-    // padding: 5px 10px;
     background:rgba(238,176,26,1);
     border-radius: 20px;
     font-size:14px;
@@ -10,12 +7,14 @@
     font-weight:500;
     color:rgba(255,255,255,1);
     line-height:30px;
+    .icon {
+        padding: 5px;
+    }
 }
 .primarybtn:active {
     background:rgba(238,176,26,0.7);
 }
 .defaultbtn {
-    padding: 5px 10px;
     background:rgba(223,225,227,1);
     border-radius: 15px;
     font-size:14px;
@@ -23,6 +22,9 @@
     font-weight:500;
     color:rgba(71,74,82,1);
     line-height:30px;
+    .icon {
+        padding: 5px;
+    }
 }
 .defaultbtn:active {
     background: rgba(0,0,0,0.4)
@@ -30,39 +32,44 @@
 .circularbtn {
     width:30px;
     height:30px;
-    // background:rgba(238,176,26,1);
     border-radius:20px;
     border-radius: 50%;
-}
-.circularbtn:active {
-    background:rgba(238,176,26,0.7);
+    text-align: center;
+    line-height: 30px;
+    .icon {
+        padding: 0;
+    }
 }
 .bigbtn {
     padding: 10px 20px;
-    border-radius:25px;
+    border-radius:35px;
     font-size:24px;
     font-family:PingFangSC-Medium;
     font-weight:500;
-    line-height:50px;
+    line-height: 33px;
 }
-.middlebtn {
+.samllbtn {
     padding: 10px 15px;
     border-radius:20px;
-    font-size:24px;
+    font-size:16px;
     font-family:PingFangSC-Medium;
     font-weight:500;
-    line-height:50px;
+    line-height: 22px;
 }
 .minibtn {
     padding: 10px 10px;
     border-radius:20px;
-    font-size:24px;
+    font-size:14px;
     font-family:PingFangSC-Medium;
     font-weight:500;
-    line-height:50px;
+    line-height: 20px;
 }
 
 button:focus{outline:0;} 
 button {
     border:none;
+}
+
+.icon-talk {
+    font-size: 20px;
 }
