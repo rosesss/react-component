@@ -1,0 +1,68 @@
+
+.primarybtn {
+    width: 76px;
+    height: 30px;
+    // padding: 5px 10px;
+    background:rgba(238,176,26,1);
+    border-radius: 20px;
+    font-size:14px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:30px;
+}
+.primarybtn:active {
+    background:rgba(238,176,26,0.7);
+}
+.defaultbtn {
+    padding: 5px 10px;
+    background:rgba(223,225,227,1);
+    border-radius: 15px;
+    font-size:14px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:rgba(71,74,82,1);
+    line-height:30px;
+}
+.defaultbtn:active {
+    background: rgba(0,0,0,0.4)
+}
+.circularbtn {
+    width:30px;
+    height:30px;
+    // background:rgba(238,176,26,1);
+    border-radius:20px;
+    border-radius: 50%;
+}
+.circularbtn:active {
+    background:rgba(238,176,26,0.7);
+}
+.bigbtn {
+    padding: 10px 20px;
+    border-radius:25px;
+    font-size:24px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    line-height:50px;
+}
+.middlebtn {
+    padding: 10px 15px;
+    border-radius:20px;
+    font-size:24px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    line-height:50px;
+}
+.minibtn {
+    padding: 10px 10px;
+    border-radius:20px;
+    font-size:24px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    line-height:50px;
+}
+
+button:focus{outline:0;} 
+button {
+    border:none;
+}
