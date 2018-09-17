@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="App">
+        {/* <div className="App">
             <Button type='primary' size='small' icon='talk'>主要按钮</Button>
           </div>
           <div className="App">
@@ -27,7 +27,8 @@ class App extends Component {
             <Button type='default' size='mini' icon='add'>次要按钮</Button>
           </div>
           <div className="App">
-          </div>
+          </div> */}
+          
       </div> 
       
     );
